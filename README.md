@@ -17,26 +17,21 @@ This project demonstrates a complete **data engineering mini-pipeline** — from
 apache-jira-scraper/
 │
 ├── scraper/
-│ ├── config.py # API configuration and project settings
-│ ├── jira_scraper.py # Fetches issues from Apache JIRA REST API
-│ ├── data_transformer.py # Cleans, normalizes, and saves structured data
-│ └── utils.py # Logging, helper, and utility functions
+│   ├── config.py            # API configuration and project settings
+│   ├── jira_scraper.py      # Fetches issues from Apache JIRA REST API
+│   ├── data_transformer.py  # Cleans, normalizes, and saves structured data
+│   └── utils.py             # Logging, helper, and utility functions
 │
 ├── data/
-│ ├── raw/ # Stores raw API responses (ignored in .gitignore)
-│ └── processed/ # Stores cleaned JSONL outputs (ignored in .gitignore)
+│   ├── raw/                 # Stores raw API responses (ignored in .gitignore)
+│   └── processed/           # Stores cleaned JSONL outputs (ignored in .gitignore)
 │
-├── logs/ # Application logs (ignored in .gitignore)
+├── logs/                    # Application logs (ignored in .gitignore)
 │
-├── main.py # Entry point: runs the complete pipeline
-├── requirements.txt # Python dependencies
-├── .gitignore # Ignore rules for large or transient files
-└── README.md # Documentation
-
-yaml
-Copy code
-
----
+├── main.py                  # Entry point: runs the complete pipeline
+├── requirements.txt         # Python dependencies
+├── .gitignore               # Ignore rules for large or transient files
+└── README.md                # Documentation
 
 ## ⚙️ Installation  
 
